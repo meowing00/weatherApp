@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-section input,
+.search-section button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-section input {
+  width: 200px;
+}
+
+.weather-info {
+  margin: 20px 0;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.forecast-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-section input {
+    width: 100%;
+  }
+}
